@@ -17,6 +17,10 @@ function getOtp(){
 
     input.value = otp;
 
+    
+
+    message.textContent = "OTP generated! Please verify.";
+
 }
 
 
