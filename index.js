@@ -19,8 +19,6 @@ function getOtp(){
 
     
 
-    message.textContent = "OTP generated! Please verify.";
-
 }
 
 input.addEventListener('input', ()=>{
