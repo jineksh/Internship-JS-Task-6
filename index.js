@@ -23,6 +23,12 @@ function getOtp(){
 
 }
 
+input.addEventListener('input', ()=>{
+    if(input.value === ""){
+        message.textContent = "";
+    }
+}); 
+
 
 function validateOtp(){
     const userInput = input.value;
