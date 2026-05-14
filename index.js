@@ -5,6 +5,11 @@ const message = document.querySelector("#otp-message");
 
 function getOtp(){
 
+    if(input.value){
+        message.textContent = "Please clear the input field before generating a new OTP.";
+        message.style.color = "red";
+        return;
+    }
 
     const otp = Math.floor(100000 + Math.random() * 900000);
 
@@ -25,8 +30,15 @@ function validateOtp(){
         message.style.color = "red";
     }
 
+
+    if(userInput === storedOtp){
+        message.style.color = "green";
+    }
+
     setTimeout(()=>{
         input.value = "";
+    
+
         message.textContent = "";
         
     },3000);
@@ -37,3 +49,5 @@ function validateOtp(){
 
 getBtn.addEventListener('click', getOtp);
 verifyBtn.addEventListener('click', validateOtp);
+
+
