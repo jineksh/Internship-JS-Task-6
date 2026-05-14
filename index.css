@@ -110,3 +110,33 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+
+@media (max-width : 468px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .otp-container {
+        padding: 30px 20px;
+    }
+
+    .otp-container h3 {
+        font-size: 24px;
+    }
+
+    .get-otp-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .otp-input-group input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .otp-input-group button {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+}
